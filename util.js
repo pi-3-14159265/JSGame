@@ -1,4 +1,6 @@
 import { Card } from "./Card.js";
+import { draftOn } from './script.js';
+
 
 export function randNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min)
@@ -15,7 +17,8 @@ export function loadJSON(path) {
           "cardEffects" : {
               "gold" : -10,
               "damage" : 100
-              }
+              },
+          "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"Shield",
@@ -25,7 +28,8 @@ export function loadJSON(path) {
           "cardEffects" : {
               "gold": -10,
               "shield" : 20
-              }
+              },
+          "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"Rage",
@@ -35,7 +39,8 @@ export function loadJSON(path) {
           "cardEffects" : {
               "gold" : -30,
               "buff" : 50
-          }
+          },
+          "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"All Around a Nice Person",
@@ -44,7 +49,8 @@ export function loadJSON(path) {
           "manaCost" : "100",
           "cardEffects" : {
               "gold" : -100
-            }
+            },
+            "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"Cold Night",
@@ -54,7 +60,8 @@ export function loadJSON(path) {
           "cardEffects" : {
               "gold" : -50,
               "frostTokensToYou" : 5,
-              "frostTokensToEnemy" : 10}
+              "frostTokensToEnemy" : 10},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"A Cold Summer Night",
@@ -65,7 +72,8 @@ export function loadJSON(path) {
               "gold" : -50,
               "frostTokensToYou" : 30 ,
               "burn" : [45, 2],
-              "frostTokensToEnemy" : 15}
+              "frostTokensToEnemy" : 15},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"Super Sheild",
@@ -74,7 +82,8 @@ export function loadJSON(path) {
           "manaCost" : "90",
           "cardEffects" : {
               "gold" : -80,
-              "shield" : 100}
+              "shield" : 100},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"Call of Stregth",
@@ -84,7 +93,8 @@ export function loadJSON(path) {
           "cardEffects" : {
               "gold" : -50,
               "buff" : 50,
-              "damage" : 40}
+              "damage" : 40},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"It's Raing Fire",
@@ -93,7 +103,8 @@ export function loadJSON(path) {
           "manaCost" : "25",
           "cardEffects" : {
               "gold" : -25,
-              "burn" : [50, 2]}
+              "burn" : [50, 2]},
+              "img" : "https://cdn.discordapp.com/attachments/1141902876583665674/1197653688622268526/aaa.png?ex=65bc0cea&is=65a997ea&hm=5784f4dc0392fcb227c78a75345ccdea98a02ee9412b6a003932412be37c5893&"
       },
       {
           "nameOfCard":"On Fire",
@@ -102,7 +113,8 @@ export function loadJSON(path) {
           "manaCost" : "125",
           "cardEffects" : {
               "gold" : -100,
-              "burn" : [100, 2]}
+              "burn" : [100, 2]},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"On Ice",
@@ -111,7 +123,8 @@ export function loadJSON(path) {
           "manaCost" : "100",
           "cardEffects" : {
               "gold" : -80,
-              "frostTokensToEnemy" : 100}
+              "frostTokensToEnemy" : 100},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"OverPowered",
@@ -121,7 +134,8 @@ export function loadJSON(path) {
           "cardEffects" : {
               "gold" : -300,
               "buff" : 300
-          }
+          },
+          "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"Fighting Words",
@@ -131,7 +145,8 @@ export function loadJSON(path) {
           "cardEffects" : {
               "gold" : -10,
               "burn" : [10, 2],
-              "frostTokensToEnemy" : 10}
+              "frostTokensToEnemy" : 10},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"Free Attack",
@@ -140,7 +155,8 @@ export function loadJSON(path) {
           "manaCost" : "0",
           "cardEffects" : {
               "gold" : -100,
-              "damage" : 10}
+              "damage" : 10},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"Lucky Dodge",
@@ -149,7 +165,8 @@ export function loadJSON(path) {
           "manaCost" : "0",
           "cardEffects" : {
               "gold" : -100,
-              "shield" : 10}
+              "shield" : 10},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"?",
@@ -158,7 +175,8 @@ export function loadJSON(path) {
           "manaCost" : "0",
           "cardEffects" : {
               "gold" : 0,
-              "damage" : 1}
+              "damage" : 1},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
       },
       {
           "nameOfCard":"Is It Cold Outside?",
@@ -168,7 +186,8 @@ export function loadJSON(path) {
           "cardEffects" : {
               "gold" : -90,
               "shield" : 200,
-              "frostTokensToYou" : 100}
+              "frostTokensToYou" : 100},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"
           },
           {
               "nameOfCard":"A Brand New Day",
@@ -176,7 +195,8 @@ export function loadJSON(path) {
               "cardType" : "Spell",
               "manaCost" : "0",
               "cardEffects" : {
-                  "gold" : -100}
+                  "gold" : -100},
+                  "img" : "https://wallpaperaccess.com/full/682647.jpg"
           },
       {
           "nameOfCard":"Strategy",
@@ -186,7 +206,8 @@ export function loadJSON(path) {
           "cardEffects" : {
               "gold" : -30,
               "shield" : 10,
-              "damage" : 25}    
+              "damage" : 25},
+              "img" : "https://wallpaperaccess.com/full/682647.jpg"    
       }]
   }
 }
@@ -211,6 +232,13 @@ export function banner(message){
   banner.innerHTML = message;
 } 
 
+export function bg(filePath){
+    /* Gets body element */
+    let body = document.getElementsByTagName("body")[0];
+    /* Sets background image */
+    body.style.backgroundImage = `url(${filePath})`;
+}
+
 export function input(message){
   return prompt(message);
 }
@@ -223,10 +251,10 @@ export  function getDeck(sizeOfDeck, randomness, JSON = "./cards.json") {
   for (let i = 0; i < sizeOfDeck; i++) {
       if (randomness !== false) {
           for (let j = 0; j < randomNum(0, randomness); j++) {
-              items.push(new Card(cards[i]["nameOfCard"], cards[i]["cardInfo"], cards[i]["cardEffects"], cards[i]["cardType"], cards[i]["manaCost"]));
+              items.push(new Card(cards[i]["nameOfCard"], cards[i]["cardInfo"], cards[i]["cardEffects"], cards[i]["cardType"], cards[i]["manaCost"], cards[i]["img"]));
           }
       }
-      items.push(new Card(cards[i]["nameOfCard"], cards[i]["cardInfo"], cards[i]["cardEffects"], cards[i]["cardType"], cards[i]["manaCost"]));
+      items.push(new Card(cards[i]["nameOfCard"], cards[i]["cardInfo"], cards[i]["cardEffects"], cards[i]["cardType"], cards[i]["manaCost"], cards[i]["img"]));
   }
   return items;
 }
@@ -260,7 +288,7 @@ export async function draftGui(draftRounds, set, fromCards) {
     let cardsToChooseFrom = getDeck(set, false, fromCards);
     for(let j = 0; j < cardsToChooseFrom.length; j++){
       let card = cardsToChooseFrom[j];
-      let cardDiv = createCardDiv(j, card.name, card.manaCost, "https://www.kindpng.com/picc/m/224-2242550_pixel-art-sword-hd-png-download.png", card.description);
+      let cardDiv = createCardDiv(j, card.name, card.manaCost, card.img, card.description);
       cardDiv.addEventListener('click', () => {
         myDraftDeck.push(card);
         cardDiv.remove();
@@ -325,5 +353,17 @@ export function createCardDiv(id, title, manaCost, imageUrl, paragraphText) {
   // Add the inner div to the card div
   card.appendChild(innerDiv);
 
+  card.addEventListener('click', () => {
+    if (draftOn) {
+      card.classList.toggle('draft-clicked');
+      console.log("draft clicked")
+      sleep(2)
+    }
+  });
+
   return card;
+}
+
+export function sleep(time) {
+    return new Promise(resolve => setTimeout(resolve,time/1000))
 }

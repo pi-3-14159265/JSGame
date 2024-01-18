@@ -20,4 +20,8 @@ export class SudoCard {
             "myFrost": frostTokensToYou
         };
     }
+
+    whoAmI() {
+        return "SudoCard";
+    }
 }

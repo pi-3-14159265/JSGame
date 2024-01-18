@@ -63,4 +63,8 @@ export class Enemy {
         let damage = this.power + this.buffTokens-this.frostTokens;
         return damage;
     }
+
+    whoAmI() {
+        return "Enemy";
+    }
 }

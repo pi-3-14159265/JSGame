@@ -5,7 +5,11 @@ import { Card } from "./Card.js";
 import { SudoCard } from "./SudoCard.js";
 
 // This is the main game class. It contains all the game logic and is the only class that interacts with the DOM.
+
+//anytime Im lost recall object have a whoAmI function
+export let draftOn = true;
 let myDeck = await util.draftGui(5, 3, "./cards.json");
+draftOn = false;
 console.log(myDeck);
 let player = new Player(
     "pi",
@@ -23,15 +27,16 @@ let player = new Player(
     []
 )
 console.log(player.deck);
-function displayDeck(){
+function displayDeck(player){
     util.banner("Your Deck");
     let parentElement = document.getElementById("main");
 
     for(let i = 0; i < player.deck.length; i++){
         let shorthand = player.deck[i];
-        let card = util.createCardDiv(i, shorthand["name"], shorthand["manaCost"], "https://www.kindpng.com/picc/m/224-2242550_pixel-art-sword-hd-png-download.png", shorthand["description"]);
+        //shorthand is a Card Onject
+        let card = util.createCardDiv(i, shorthand.name, shorthand.manaCost, shorthand.img, shorthand.description);
         parentElement.appendChild(card);
     }
 }
 
-displayDeck();
+displayDeck(player);

@@ -1,10 +1,11 @@
 export class Card {
-    constructor(name, description, effects, type, manaCost){
+    constructor(name, description, effects, type, manaCost, img){
         this.name = name;
         this.description = description;
         this.effects = effects;
         this.type = type;
         this.manaCost = manaCost;
+        this.img = img;
     }
 
     dealWithEffects() {
@@ -33,6 +34,10 @@ export class Card {
         } else {
             return false;
         }
+    }
+
+    whoAmI() {
+        return "Card";
     }
 
 }
