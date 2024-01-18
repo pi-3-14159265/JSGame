@@ -104,4 +104,8 @@ export class Player {
         }
     }
 
+    whoAmI() {
+        return "Player";
+    }
+
 }
